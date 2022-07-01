@@ -1,6 +1,52 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
 
 
 @import "reset.scss";
 
+body{
+    background-color: #999;
+}
+.header {
+    height: 90px;
+    max-width: 1440px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    background-color: white;
+    padding-left: 45px;
+    padding-right: 51px;
+    &__logo {
+        flex: 1 1 auto;
+    }
 
+    &__menubox {
+        margin: 0 70px;
+        display: flex;
+        height: 24px;
+        a{
+            font-family: 'Raleway';
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 20px;
+            color: #214E41;
+            margin-right: 50px;
+            &:last-child{
+                margin-right: 0;
+            }
+        }
+    }
+
+    &__item {}
+
+    &__actions {
+        flex: 1 1 auto;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    &__demobtn {}
+
+    &__login {}
+
+    &__lang {}
+}
